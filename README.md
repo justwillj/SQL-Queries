@@ -1,9 +1,9 @@
 # SQL Queries
 
 ### Setup Instructions
-1. Clone the repo `git clone git@git.catalystitservices.com:CatalyteTraining/WIP/sql_queries_template.git`
+1. Clone the repository
 2. cd into the sql_queries_TEMPLATE directory
-3. Ensure docker is running with a postgres container on port 5432
+3. Ensure docker is running and create a postgres container `docker run --name postgres -d -p 5432:5432 postgres`
 4. Run `docker exec -i -u postgres postgres pg_restore -C -d postgres < college-export.dump`
 
 This will restore the "college" database with the test data you will need to complete the SQL Queries Exercise.
@@ -16,4 +16,3 @@ To connect to the college database, run the following commands:
 
 To list all of the tables in the database, run `\dt`
 To see the schema of a table, run `\d <tablename>`
-
