@@ -13,3 +13,10 @@ FROM classes
 INNER JOIN grades
 ON classes.id = grades.class_id
 WHERE student_id = 3;
+
+--Requirement 5
+DELETE FROM grades
+WHERE student_id = (4);
+
+DELETE FROM students
+WHERE id = (4);
