@@ -20,3 +20,11 @@ WHERE student_id = (4);
 
 DELETE FROM students
 WHERE id = (4);
+
+--Requirement 6
+select concat(last_name,' ', first_name) 
+as name , grades.grade 
+from students
+INNER JOIN grades
+ON students.id = grades.student_id
+WHERE class_id = 1;
